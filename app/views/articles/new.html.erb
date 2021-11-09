@@ -1,3 +1,10 @@
-<h1>Create New Article</h1>
-<%= render 'form', articles: @article %>
-<%= link_to "Homepage", articles_path %>
+<nav>
+  <%= link_to "Wikinimous", articles_path %>
+  <%= link_to "New Article", articles_new_path %>
+</nav>
+
+<div class="container">
+  <h1>Create New Article</h1>
+  <%= render 'form', articles: @article %>
+  <%= link_to "Homepage", articles_path %>
+</div>

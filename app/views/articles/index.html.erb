@@ -1,11 +1,15 @@
-<%= link_to "Wikinimous", articles_path %>
-<%= link_to "Create Article", articles_new_path %>
+<nav>
+  <%= link_to "Wikinimous", articles_path %>
+  <%= link_to "New Article", articles_new_path %>
+</nav>
 
-<ul>
-  <% @articles.each do |article| %>
-    <li>
-      <h3><%= link_to "#{article.title}", article_path(article) %></h3>
-      <p><%= article.content %></p>
-    </li>
-  <% end %>
-</ul>
+<div class="container">
+  <ul>
+    <% @articles.each do |article| %>
+      <li>
+        <h3><%= link_to "#{article.title}", article_path(article) %></h3>
+        <p><%= article.content %></p>
+      </li>
+    <% end %>
+  </ul>
+</div>

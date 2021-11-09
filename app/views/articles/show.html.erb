@@ -1,4 +1,20 @@
-<h1><%= @article.title %></h1>
-<%= link_to "Update Article", edit_path(@article) %>
-<%= link_to "Delete Article", article_path(@article),
- method: :delete, data: { confirm: "It will be deleted!" } %>
+<nav>
+  <%= link_to "Wikinimous", articles_path %>
+  <%= link_to "New Article", articles_new_path %>
+</nav>
+
+<div class="container">
+  <div class="article-title">
+    <h1>
+    <%= @article.title %>
+    <%= link_to edit_path(@article) do %>
+      <i class="fas fa-edit"></i>
+    <% end %>
+    <%= link_to article_path(@article), method: :delete,
+    data: { confirm: "It will be deleted!" } do %>
+       <i class="fas fa-trash"></i>
+    <% end %>
+    </h1>
+  </div>
+  <%= @article.content %>
+ </div>

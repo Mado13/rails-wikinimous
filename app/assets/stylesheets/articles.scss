@@ -1,3 +1,62 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body {
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  background-color: #F8F8F8;
+  padding: 24px 16px;
+  border-bottom: grey;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #337AB7;
+  font-family: FontAwsome;
+}
+
+nav a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 750px;
+  margin: auto;
+}
+
+.article-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+// label {
+//   background-color: black;
+// }
+
+input {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.content-input {
+  height: 200px;
+  width: 100%;
+}
